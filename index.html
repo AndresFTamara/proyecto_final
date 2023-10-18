@@ -26,11 +26,13 @@
       </ul>
     </nav>
   </header>
-  <main class="contenido-bienvenida"></main>
-  <section class="banner">
-    <h1 class="title-banner">Cars'Lux Automotriz</h1>
-    <h2 class="frase-banner">Tus respuestos y accesorios de confianza a un click de alcance</h2>
-  </section>
+
+  <main class="contenido-bienvenida">
+    <section class="banner">
+      <h1 class="title-banner">Cars'Lux Automotriz</h1>
+      <h2 class="frase-banner">Tus respuestos y accesorios de confianza a un click de alcance.</h2>
+    </section>
+  </main>
 
   <section class="Resumen-empresa">
     <h2>Acerca de nosotros...</h2>
@@ -44,14 +46,53 @@
   </section>
 
   <section class="services">
-    <h2>Servicios</h2>
-    <div>
-      <div>
-        <span>
-          <img src="" alt="">
+    <h2 class="services__titulo">Servicios</h2>
+    <div class="services__contenedor">
+
+      <div class="services__card">
+        <span class="services__favorito">
+          <img src="./assets/img/checkbox.svg" alt="checkbox image favorite">
         </span>
-      </div>
+        <img src="./assets/img/shopping-cart.svg" alt="shpping cart service image">
+      </div class="services_carta-contenido">
+      <h3>Compras en linea</h3>
+      <p>
+        Con los Cars'Luceros puedes pedir tu compra vía online a un click de tus manos.
+        Garantizamos nuestra calidad y cubrimos fallas en caso tal que se presenten en los productores.
+      </p>
     </div>
+    <button class="services__boton" type="button">Comprar</button>
+
+    <div class="services__contenedor">
+
+      <div class="services__card">
+        <span class="services__favorito">
+          <img src="./assets/img/checkbox.svg" alt="checkbox image favorite">
+        </span>
+        <img src="./assets/img/mail.svg" alt="Delivery service image">
+      </div class="services_carta-contenido">
+      <h3>Envios</h3>
+      <p>
+        Contamos con una amplia cobertura de domilicio en la ciudad de Cali-Colombia para tus productos.
+      </p>
+    </div>
+    <button class="services__boton" type="button">Comprar</button>
+
+    <div class="services__contenedor">
+
+      <div class="services__card">
+        <span class="services__favorito">
+          <img src="./assets/img/checkbox.svg" alt="checkbox image favorite">
+        </span>
+        <img src="./assets/img/businessplan.svg" alt="shping cart service image">
+      </div class="services_carta-contenido">
+      <h3>Precios asequibles</h3>
+      <p>
+        Los mejores precios los consigues con nosotros, no esperes mas para tu compra.
+      </p>
+    </div>
+    <button class="services__boton" type="button">Comprar</button>
+
   </section>
 </body>
 

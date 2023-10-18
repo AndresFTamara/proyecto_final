@@ -1,0 +1,16 @@
+.services {
+    background-color: #fff;
+}
+
+.services__titulo {
+    max-width: 110px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.services__card {
+    border-radius: 10px;
+    padding: 15px 25px;
+}

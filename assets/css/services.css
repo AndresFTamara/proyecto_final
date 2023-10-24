@@ -3,7 +3,13 @@
 }
 
 .services__titulo {
-    max-width: 110px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.services__contenedor {
+    max-width: 1110px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -11,6 +17,43 @@
 }
 
 .services__card {
+    position: relative;
     border-radius: 10px;
-    padding: 15px 25px;
+    padding: 35px 55px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.services__card:hover {
+    background-color: #5c5151 ;
+}
+
+.services__favorito {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px 0 10px 0;
+    background-color: #fff;
+}
+
+.services_card-img {
+
+}
+
+.services_carta-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services__boton {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 20px 25px;
+    background-color: aqua;
+    color: #fff;
 }

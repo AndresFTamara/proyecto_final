@@ -6,6 +6,7 @@
     text-align: center;
     font-size: 40px;
     padding-top: 50px;
+    margin-bottom: 20px;
 }
 
 .services__contenedor {
@@ -39,9 +40,6 @@
     background-color: #fff;
 }
 
-.services_card-img {
-
-}
 
 .services_carta-contenido {
     display: flex;
@@ -54,6 +52,6 @@
     outline: none;
     border-radius: 10px;
     padding: 20px 25px;
-    background-color: aqua;
+    background-color:rgba(38, 35, 35, 0.846);
     color: #fff;
 }

@@ -3,6 +3,7 @@
 @import "./header.css";
 @import "./contenido-bienvenida.css";
 @import "./services.css";
+@import "./testimonios.css";
 
 /*Para mantener el encabezado quieto*/
 *{

@@ -1,0 +1,23 @@
+.encabezado_link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.5s;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0.6);
+}
+
+.encabezado_link:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.encabezado_link--button {
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 8rem;
+    transition: 0.3s;
+}
+
+.encabezado_link--button:hover {
+    background-color: #ffffff55;
+}

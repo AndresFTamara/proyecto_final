@@ -3,10 +3,15 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 40px;
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 20 ;
+}
+
+.header--fill {
+    background-color: rgb(5, 4, 4);
 }
 
 .header_brand {
@@ -57,4 +62,34 @@ border-bottom: 1px solid #fff;
 
 .encabezado_link--button:hover {
     background-color: #ffffff55;
+}
+
+@media screen and (width <= 720) {
+    .encabezado_menu {
+        flex-direction: column ;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        justify-content: flex-start;
+        padding: 30px 40px;
+        box-shadow: blue;
+        width: 80%;
+        gap: 40px;
+    }
+    
+    .header_brand h1 {
+        font-size: 20px;
+    }
+
+    .header_brand img {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    .header {
+        padding: 10px 25px;
+    }
+
+
 }

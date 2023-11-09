@@ -16,22 +16,78 @@
             <h1>Cars'Lux Automotriz</h1>
         </div>
 
-        <nav>
-            <ul class=".encabezado_link--button">
-                <li><a class="encabezado_link encabezado_link--button">Cerrar Sesión</a></li>
+        <i class="header__icon" id="menu-open">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-layout-grid" width="30"
+                height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                <path d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                <path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+            </svg>
+        </i>
+
+        <nav class="header__nav" id="nav-menu">
+            <i class="header__icon header__icon--close" id="menu-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="30" height="30"
+                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                </svg>
+            </i>
+
+            <ul class="encabezado_menu">
+                <li><a class="encabezado_link encabezado_link--button" href="./login.html">Cerrar Sesión</a></li>
             </ul>
         </nav>
-
     </header>
+    <main class="contenido-bienvenida admin-main">
+        <section class="admin__container">
+            <form id="product-form" class="admin__form">
+                <h2 id="form-title">Crear producto</h2>
+                <fieldset class="admin__form-section">
+                    <div class="admin__input">
+                        <label for="name">Nombre: </label>
+                        <input id="name" type="text" required name="name" placeholder="Ingresa un nombre...">
+                    </div>
 
-    <main class="contenido-bienvenida">
-        <section class="banner">
-            <h1 class="title-banner">Cars'Lux Automotriz</h1>
-            <h2 class="frase-banner">Tus respuestos y accesorios de confianza a un click de alcance.</h2>
+                    <div class="admin__input">
+                        <label for="price">Precio: </label>
+                        <input id="price" type="number" required name="price" placeholder="Ingresa un precio...">
+                    </div>
+                </fieldset>
+                <fieldset class="admin__form-section admin__form-section--row">
+                    <div class="admin__input">
+                        <label for="description">Descripción: </label>
+                        <textarea name="description" id="description" cols="30" rows="10" required
+                            placeholder="Ingresa una descripción..."></textarea>
+                    </div>
+                </fieldset>
+                <button class="admin__button" id="submit-button" type="submit">Crear</button>
+            </form>
+            <div class="admin__table-wrapper">
+                <table class="admin__table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-content">
+
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
-    <script src="../js/login.js"></script>
-    <script src="../js/admin.js"></script>
+
+
+
 </body>
 
 </html>

@@ -72,6 +72,14 @@ body{
   background-color: #ffffff63;
 }
 
-@media screen {
-  
+@media screen and (width <= 1000px) {
+  .formulario {
+    width: 70%;
+  }
+}
+
+@media screen and (width <= 600px) {
+  .formulario {
+    width: 95%;
+  }
 }

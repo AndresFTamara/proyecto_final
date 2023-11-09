@@ -1,15 +1,32 @@
 const header = document.getElementById('header')
-addEventListener('scroll', (event) => {
-    if (this.scrollY > 100) {
-        header.classList.add('header--fill')
-    } else {
-        header.classList.remove('header--fill')
-    }
+const menuOpen = document.getElementById('menu-open')
+const menuClose = document.getElementById('menu-close')
+const navMenu = document.getElementById('nav-menu')
+
+// Menu responsive
+if (menuOpen) {
+  menuOpen.addEventListener('click', () => {
+    navMenu.classList.add('header__nav--visible')
+  })
+}
+
+if (menuClose) {
+  menuClose.addEventListener('click', () => {
+    navMenu.classList.remove('header__nav--visible')
+  })
+}
+
+// Scroll in menu
+addEventListener('scroll', () => {
+  if (this.scrollY > 50) {
+    header.classList.add('header--fill')
+  } else {
+    header.classList.remove('header--fill')
+  }
 })
 
+const testimonials = document.querySelectorAll('.elemento_testimonio')
 
-
-/*const testimonios = document.querySelectorAll('.elemento_testimonio') 
-testimonios.forEach((testi) => {
-    testi.firstElementChild.style.height = `${testi.getBoundingClientRect().height+13} px`
-})*/
+testimonials.forEach((testi) => {
+  testi.firstElementChild.style.height = `${testi.getBoundingClientRect().height + 13}px`
+})

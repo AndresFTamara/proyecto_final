@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const productsContainer = document.querySelector('.products')
+    const productsContainer = document.querySelector('.productos')
     const products = JSON.parse(localStorage.getItem('PRODUCTS')) || []
     const productsInCart = JSON.parse(localStorage.getItem('PRODUCTS_CART')) || []
     const shoppingIcon = document.getElementById('shopping-cart-icon')

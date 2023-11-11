@@ -58,3 +58,16 @@
 .icono_testimonio {
     color: rgb(255, 196, 3);
 }
+
+@media screen and (width <= 720px) {
+    .elemento_testimonio {
+      flex-direction: column;
+      margin: 5px;
+    }
+  
+    .testimonios_imagen {
+      flex: 204px;
+      border-radius: 0;
+      border-radius: 10px 10px 0 0;
+    }
+  }

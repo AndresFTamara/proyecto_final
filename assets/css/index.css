@@ -6,7 +6,8 @@
 @import "./testimonios.css";
 @import "./admin.css";
 @import "./footer.css";
-@import "../css/productos.css";
+@import "./productos.css";
+@import "./resumenEmpresa.css";
 /*Para mantener el encabezado quieto*/
 *{
     margin: 0;

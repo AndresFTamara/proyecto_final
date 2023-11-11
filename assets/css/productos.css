@@ -62,8 +62,8 @@
   
   #shopping-cart-icon {
     position: absolute;
-    top: 8px;
-    right: -8px;
+    top: 5px;
+    right: -5px;
     border-radius: 50%;
     background-color: red;
     color: #FFF;

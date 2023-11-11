@@ -10,7 +10,8 @@
 
 .banner {
     height: calc(100vh - 104px);
-    padding: 104px;
+    padding: 10px;
+    text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -31,6 +32,7 @@ text-shadow: -6px 4px 2px rgba(0, 0, 0, 0.6);
     text-shadow: -2px 4px rgba(0, 0, 0, 1);
     color: #fff;
     display: block;
+    margin-left: 150px;
     white-space: nowrap;
     border-right: 3px solid #fff;
     width: 55.5ch;
@@ -49,4 +51,14 @@ text-shadow: -6px 4px 2px rgba(0, 0, 0, 0.6);
         border-color: transparent;
     }
     
+}
+
+@media (width <= 800px ){
+    .frase-banner {
+        display: none;
+    } 
+    
+    .title-banner {
+        font-size: 24px;
+    }
 }

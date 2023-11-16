@@ -14,7 +14,7 @@
   }
   
   .admin__table tr {
-    background-color: #00617062;
+    background-color: #7a7a7a;
     backdrop-filter: blur(20px);
   }
   
@@ -35,7 +35,7 @@
     font-size: 18px;
     font-weight: 700;
     color: #FFF;
-    background-color: #006170;
+    background-color: #282d2f;
     cursor: pointer;
   }
   
@@ -51,7 +51,7 @@
   }
   
   .admin__form {
-    background-color: #00617062;
+    background-color: #7a7a7a;
     border: 1px solid #FFF;
     border-radius: 15px;
     padding: 20px 25px;
@@ -110,7 +110,7 @@
     border-radius: 10px;
     font-weight: 700;
     font-size: 18px;
-    background-color: #006170;
+    background-color: #282d2f;
     padding: 10px 15px;
     cursor: pointer;
     color: #FFF;
